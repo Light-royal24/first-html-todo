@@ -1,0 +1,132 @@
+
+* {
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+    min-height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    padding: 10px;
+    font-weight: 100;
+    color: #333;
+}
+
+.main-content {
+    width:60%;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    cursor: pointer;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    font: 19px;
+    background-color: #eee;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+ul li:hover {
+    background-color: #ddd;
+}
+
+ul li.checked {
+    background-color: #888;
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+   position: absolute;
+   right: 0;
+   top: 0;
+   padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: #aaa;
+}
+
+#addTodo {
+    width: 100%;
+    background-color: darkseagreen;
+    height: 80px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 65%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px ;
+    float: left;
+    height: inherit;
+    outline: none;
+}
+
+.addBtn {
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: 0.2s;
+    background: #d9d9d9;
+    color: #555;
+    padding: 10px;
+    width: 27%;
+    outline: none;
+    height: 100%;
+    border: none;
+}
+
+.contain {
+    height: 50%;
+    width: 95%;
+}
